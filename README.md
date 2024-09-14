@@ -1,5 +1,11 @@
 # rap_lyrics_gpt_remix
 
+## Inspiration for this repo
+
+This project was inspired by the HuggingFace [Cropinky/rap_lyrics_english](https://huggingface.co/datasets/Cropinky/rap_lyrics_english/tree/main) data set project.
+
+I've taken that project a step further by taking the output of the rap lyrics downloader and feeding it into a GPT2 Huggingface model for training. The resultant model can be used to generate new rap songs, with dubious results given the simplicity of the GPT2 model used as a starting point. YMMV!
+
 ## Downloading the lyrics
 
 The genius.py script will search for .txt files in the input directory. The script expects the files to contain a single artist's name per line. 
