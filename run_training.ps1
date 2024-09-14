@@ -1,0 +1,17 @@
+python run_clm.py `
+    --output_dir /tmp/test-rap `
+    --model_name_or_path gpt2 `
+    --config_name ./ `
+    --tokenizer_name ./ `
+    --train_file=./output/corpus.txt `
+    --block_size "512" `
+    --do_train `
+    --do_eval `
+    --per_device_train_batch_size 8 `
+    --per_device_eval_batch_size 8 `
+    --learning_rate "5e-4" `
+    --adam_beta1 "0.9" --adam_beta2 "0.98" --weight_decay "0.01" `
+    --num_train_epochs "60" `
+    --logging_steps "500" `
+    --save_steps "5000" `
+    --eval_steps "100"
